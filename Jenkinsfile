@@ -15,13 +15,8 @@ pipeline {
                 sh '''#!/bin/bash
                 echo 'Test Step: We run testing tool like pytest here'
 
-                # TODO fill out the path to conda here
                 /opt/miniconda3/condabin/conda init
-
-                # TODO Complete the command to run pytest
                 /opt/miniconda3/condabin/conda run -n lab6-nihaljog pytest
-
-                # comment this line after implementing Jenkinsfile
                 '''
 
             }
